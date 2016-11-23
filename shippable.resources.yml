@@ -1,0 +1,7 @@
+resources:
+  - name: img-test
+    type: image
+    pointer:
+      sourceName: "ragesh/busybox"
+    seed:
+      versionName: "latest"
