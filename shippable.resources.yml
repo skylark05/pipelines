@@ -5,3 +5,10 @@ resources:
       sourceName: "ragesh/busybox"
     seed:
       versionName: "latest"
+
+  - name: repo-skylark05-pipelines
+    type: gitRepo
+    integration: github-skylark05
+    pointer:
+      sourceName: skylark05/pipelines
+      branch: master
