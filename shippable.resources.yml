@@ -1,5 +1,5 @@
 resources:
-  - name: img-test
+  - name: img-busybox
     type: image
     pointer:
       sourceName: "ragesh/busybox"
