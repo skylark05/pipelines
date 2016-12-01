@@ -2,7 +2,7 @@ jobs:
   - name: job-foo
     type: runSh
     steps:
-      - IN: img-busybox
+#      - IN: img-busybox
 #      - IN: repo-skylark05-pipelines
       - TASK:
         - script: . /build/IN/repo-skylark05-pipelines/gitRepo/foo.sh
