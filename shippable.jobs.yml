@@ -28,9 +28,9 @@ jobs:
       - IN: bar-2
       - TASK:
         - script: echo "bar-21 says hello"
-  - name: foo-1
-    type: runSh
-    steps:
-      - IN: job-foo
-      - TASK:
-        - script: echo "foo-1 says hello"
+#  - name: foo-1
+#    type: runSh
+#    steps:
+#      - IN: job-foo
+#      - TASK:
+#        - script: echo "foo-1 says hello"
