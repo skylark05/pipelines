@@ -1,10 +1,10 @@
 resources:
-  - name: img-busybox-2
-    type: image
-    pointer:
-      sourceName: "ragesh/busybox"
-    seed:
-      versionName: "foo"
+#  - name: img-busybox-2
+#    type: image
+#    pointer:
+#      sourceName: "ragesh/busybox"
+#    seed:
+#      versionName: "foo"
       
   - name: img-busybox
     type: image
