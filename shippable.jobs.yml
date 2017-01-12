@@ -2,42 +2,35 @@ jobs:
   - name: job-foo
     type: runSh
     steps:
-#      - IN: img-busybox
-#      - IN: repo-skylark05-pipelines
       - TASK:
-        - script: . /build/IN/repo-skylark05-pipelines/gitRepo/foo.sh
+        - script: echo "job-foo says hello"
   - name: job-bar
     type: runSh
     steps:
       - IN: img-busybox
-#      - IN: repo-skylark05-pipelines
       - TASK:
-        - script: . /build/IN/repo-skylark05-pipelines/gitRepo/foo.sh
+        - script: echo "job-bar says hello"
   - name: bar-1
     type: runSh
     steps:
       - IN: job-bar
-#      - IN: repo-skylark05-pipelines
       - TASK:
-        - script: . /build/IN/repo-skylark05-pipelines/gitRepo/foo.sh
+        - script: echo "bar-1 says hello"
   - name: bar-2
     type: runSh
     steps:
       - IN: job-bar
-#      - IN: repo-skylark05-pipelines
       - TASK:
-        - script: . /build/IN/repo-skylark05-pipelines/gitRepo/foo.sh
+        - script: echo "bar-2 says hello"
   - name: bar-21
     type: runSh
     steps:
       - IN: bar-2
-#      - IN: repo-skylark05-pipelines
       - TASK:
-        - script: . /build/IN/repo-skylark05-pipelines/gitRepo/foo.sh
+        - script: echo "bar-21 says hello"
   - name: foo-1
     type: runSh
     steps:
       - IN: job-foo
-#      - IN: repo-skylark05-pipelines
       - TASK:
-        - script: . /build/IN/repo-skylark05-pipelines/gitRepo/foo.sh
+        - script: echo "foo-1 says hello"
